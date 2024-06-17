@@ -8,6 +8,7 @@ interface Component4Props {
 const Component4: React.FC<Component4Props> = ({ onCallback }) => {
     const [isGreen, setIsGreen] = useState(false);
 
+
     const OnHandler5 = () => {
         onCallback();
         setIsGreen(true);
@@ -17,7 +18,7 @@ const Component4: React.FC<Component4Props> = ({ onCallback }) => {
     return (
         <div className="container">
             <div className={`circle ${isGreen ? 'green' : 'red'}`}></div>
-            <Component5 onCallback={OnHandler5}  />
+            <Component5 onCallback={() => setInterval(OnHandler5, 1000)}  />
         </div>
     );
 };

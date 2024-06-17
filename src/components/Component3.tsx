@@ -16,7 +16,7 @@ const Component3: React.FC<Component3Props> = ({ onCallback }) => {
     return (
         <div className="container">
             <div className={`circle ${isGreen ? 'green' : 'red'}`}></div>
-            <Component4 onCallback={OnHandler5}  />
+            <Component4 onCallback={() => setInterval(OnHandler5, 1000)}  />
         </div>
     );
 };

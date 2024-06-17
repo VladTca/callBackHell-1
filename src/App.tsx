@@ -17,7 +17,7 @@ function App() {
         <div className="App">
             <h1>Callback Hell</h1>
             <div className="container">
-                <Component1 OnCallback={handleFinalCallback}/>
+                <Component1 onCallback={handleFinalCallback}/>
             </div>
             {allGreen && <p>Первый круг Ада пройден!</p>}
         </div>

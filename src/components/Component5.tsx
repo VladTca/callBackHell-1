@@ -10,7 +10,7 @@ const Component5: React.FC<Component5Props> = ({onCallback}) => {
     const [isGreen, setIsGreen] = useState(false);
 const OnHandler5 = () => {
     setIsGreen(true);
-    // onCallback();
+    onCallback();
 }
 
     return (
